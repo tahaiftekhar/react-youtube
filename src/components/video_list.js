@@ -7,7 +7,7 @@ const VideoList = (props) => {
         return (<VideoListItem key={video.etag} video={video}/>);
     });
     return (
-        <ul>
+        <ul className="col-md-4 list-group">
             {videoListItems}
         </ul>
     );
