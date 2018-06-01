@@ -17,10 +17,11 @@ class App extends Component{
             selectedVideo: null
 		};
 
-		this.onSearchChange('surfboards');
+		this.onSearchChange('God of war');
 	}
 
 	onSearchChange(term){
+	    if(!term){ term = 'God of war' }
         YTSearch({key: API_KEY, term: term}, (videos)=> {
             this.setState({
                 videos: videos,
